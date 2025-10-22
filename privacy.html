@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Privacy — aleksaitcyber</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="/assets/aleksaitcyber.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <a class="brand" href="/">
+      <img src="/assets/aleksaitcyber.svg" class="logo" alt="aleksaitcyber logo">
+      <span class="brand-name">aleksaitcyber</span>
+    </a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/email-policy.html">Email Policy</a>
+      <a href="/terms.html">Terms</a>
+      <a class="cta" href="mailto:contact@aleksaitcyber.com">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap narrow">
+    <h1>Privacy Policy</h1>
+    <p><strong>Effective Date:</strong> October 2025</p>
+
+    <h2>1) Scope</h2>
+    <p>
+      This policy describes how <strong>aleksaitcyber</strong> processes information on this website and in related
+      infrastructure monitoring tools used for operational notifications and support.
+    </p>
+
+    <h2>2) Categories of Data</h2>
+    <ul class="list">
+      <li><strong>Basic site telemetry</strong> (aggregated, non-profiling) such as page loads and error diagnostics.</li>
+      <li><strong>Communications</strong> you send to <a href="mailto:contact@aleksaitcyber.com">contact@aleksaitcyber.com</a>.</li>
+      <li><strong>Operational metadata</strong> from systems we operate (e.g., timestamps, hostnames, status codes) strictly for internal reliability and security.</li>
+    </ul>
+
+    <h2>3) Purposes & Legal Bases</h2>
+    <ul class="list">
+      <li><strong>Operate and secure services</strong> (availability, incident response, abuse prevention) — legitimate interests.</li>
+      <li><strong>Respond to inquiries</strong> you initiate — performance of a contract or pre-contractual steps.</li>
+      <li><strong>Compliance</strong> with legal obligations (e.g., security logging, fraud prevention) — legal obligation.</li>
+    </ul>
+
+    <h2>4) Email Practices</h2>
+    <p>
+      We use verified transactional email providers (currently <strong>Mailgun</strong>, previously <strong>AWS SES</strong>)
+      for low-volume administrative notifications (e.g., server health, backups, security events). No marketing or newsletters.
+      See our <a href="/email-policy.html">Email Sending Policy</a>.
+    </p>
+
+    <h2>5) Data Sharing & Processors</h2>
+    <p>We engage reputable processors to deliver our services:</p>
+    <ul class="list">
+      <li><strong>Mailgun</strong> (transactional email delivery).</li>
+      <li><strong>GitHub Pages</strong> (website hosting).</li>
+      <li><strong>ImprovMX / Gmail</strong> (inbound mail routing to <code>contact@</code>/<code>alerts@</code>).</li>
+      <li><strong>Cloud infrastructure providers</strong> for managed servers and security monitoring.</li>
+    </ul>
+    <p class="muted">
+      Processors act under contract and only process data on our documented instructions with appropriate security measures.
+    </p>
+
+    <h2>6) International Transfers</h2>
+    <p>
+      Where data is transferred outside Switzerland/EU, we rely on appropriate safeguards (e.g., SCCs or equivalent contractual protections)
+      provided by our processors.
+    </p>
+
+    <h2>7) Security</h2>
+    <ul class="list">
+      <li>TLS for data in transit; hardened Linux baselines (UFW, fail2ban, SSH best practices).</li>
+      <li>Authenticated email (SPF, DKIM, DMARC) under <code>mail.aleksaitcyber.com</code>.</li>
+      <li>Principle of least privilege; access logging and monitoring; regular patching.</li>
+    </ul>
+
+    <h2>8) Retention</h2>
+    <p>
+      We retain only what is necessary for operations, troubleshooting, and compliance, then securely delete.
+      Typical retention for routine operational logs is short-term and cyclical.
+    </p>
+
+    <h2>9) Your Rights</h2>
+    <p>
+      Subject to applicable law, you may request access, correction, deletion, restriction, or portability of your personal data,
+      or object to processing. Contact: <a href="mailto:contact@aleksaitcyber.com">contact@aleksaitcyber.com</a>.
+    </p>
+
+    <h2>10) Cookies & Tracking</h2>
+    <p>
+      We do not use advertising cookies or cross-site profiling. Any analytics we use is limited, aggregated, and operational.
+    </p>
+
+    <h2>11) Incident Response</h2>
+    <p>
+      In the event of a data incident impacting personal data, we will assess scope and impact, mitigate promptly, and notify
+      affected parties and/or authorities where required by law.
+    </p>
+
+    <h2>12) Contact</h2>
+    <p>
+      Privacy inquiries: <a href="mailto:contact@aleksaitcyber.com">contact@aleksaitcyber.com</a>
+    </p>
+
+    <h2>13) Changes</h2>
+    <p>
+      We may update this policy to reflect operational, legal, or provider changes. The latest version is published at this URL with
+      an updated effective date.
+    </p>
+  </main>
+
+  <footer class="wrap footer">
+  <div class="foot-left">© <span id="y"></span> aleksaitcyber — Structure • Reliability • Security</div>
+  <div class="foot-right">
+    <a href="/email-policy.html">Email Policy</a>
+    <span class="dot">•</span>
+    <a href="/privacy.html">Privacy</a>
+    <span class="dot">•</span>
+    <a href="/terms.html">Terms</a>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
+
+
+
+
+

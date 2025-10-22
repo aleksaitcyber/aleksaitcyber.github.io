@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Email Policy — aleksaitcyber</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="/assets/aleksaitcyber.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <a class="brand" href="/">
+      <img src="/assets/aleksaitcyber.svg" class="logo" alt="aleksaitcyber logo">
+      <span class="brand-name">aleksaitcyber</span>
+    </a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+      <a class="cta" href="mailto:contact@aleksaitcyber.com">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap narrow">
+    <h1>Email Sending Policy</h1>
+    <p>This policy explains how <strong>aleksaitcyber</strong> uses verified transactional email services (currently Mailgun, previously Amazon SES) for infrastructure-related communication.”</p>
+
+    <h2>Purpose of Email Sending</h2>
+    <p><strong>Effective Date:</strong> October 2025</p>
+
+        <p>We send <strong>transactional system notifications only</strong>. These include:</p>
+    <ul class="list">
+      <li>Server health alerts</li>
+      <li>Backup and snapshot status</li>
+      <li>Security notifications (SSH login, fail2ban events)</li>
+      <li>System uptime and monitoring alerts</li>
+    </ul>
+
+    <h2>No Unsolicited Email</h2>
+    <p>We do not send:</p>
+    <ul class="list">
+      <li>Marketing or newsletters</li>
+      <li>Cold outreach or bulk email</li>
+      <li>Third-party or purchased email lists</li>
+    </ul>
+
+    <h2>Sender Authentication</h2>
+    <p>Outgoing mail is authenticated using:</p>
+    <ul class="list">
+      <li>DKIM signing (enabled through Mailgun)</li>
+      <li>Custom MAIL FROM domain (<code>mail.aleksaitcyber.com</code>)</li>
+      <li>SPF record including Mailgun</li>
+      <li>DMARC policy enabled at domain level</li>
+    </ul>
+
+    <h2>Receiving & Monitoring</h2>
+    <p>Transactional mail is sent from:</p>
+    <pre><code>alerts@mail.aleksaitcyber.com</code></pre>
+    <p>We monitor bounces and complaints and take corrective action immediately.</p>
+    <p>All messages are authenticated, signed, and rate-limited. We do not provide third-party relay or forwarding for other domains.</p>
+
+     <p class="muted">
+      All email operations are internal and authenticated under <strong>mail.aleksaitcyber.com</strong>.
+    </p>
+    
+    <h2>Abuse Contact</h2>
+    <p>If you believe you received unintended email from our systems, contact:</p>
+    <p><a href="mailto:contact@aleksaitcyber.com">contact@aleksaitcyber.com</a></p>
+  </main>
+
+ <footer class="wrap footer">
+  <div class="foot-left">© <span id="y"></span> aleksaitcyber — Structure • Reliability • Security</div>
+  <div class="foot-right">
+    <a href="/email-policy.html">Email Policy</a>
+    <span class="dot">•</span>
+    <a href="/privacy.html">Privacy</a>
+    <span class="dot">•</span>
+    <a href="/terms.html">Terms</a>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>

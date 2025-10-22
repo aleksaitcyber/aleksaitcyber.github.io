@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Terms of Service — aleksaitcyber</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="/assets/aleksaitcyber.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <a class="brand" href="/">
+      <img src="/assets/aleksaitcyber.svg" class="logo" alt="aleksaitcyber logo">
+      <span class="brand-name">aleksaitcyber</span>
+    </a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/email-policy.html">Email Policy</a>
+      <a href="/privacy.html">Privacy</a>
+      <a class="cta" href="mailto:contact@aleksaitcyber.com">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap narrow">
+    <h1>Terms of Service</h1>
+    <p><strong>Effective Date:</strong> October 2025</p>
+
+    <h2>1. Purpose and Scope</h2>
+    <p><strong>aleksaitcyber</strong> provides systems engineering, cybersecurity consulting, and infrastructure operations services. All services, including this website and associated transactional email systems, are intended solely for legitimate infrastructure communication, monitoring, and support between aleksaitcyber and its contracted clients.</p>
+
+    <h2>2. Acceptable Use</h2>
+    <p>Use of aleksaitcyber services implies full compliance with this policy and all applicable data-protection and anti-spam legislation. Users agree to:</p>
+    <ul class="list">
+      <li>Use the service exclusively for lawful, technical, and administrative communication.</li>
+      <li>Refrain from sending unsolicited, marketing, or promotional emails.</li>
+      <li>Maintain accurate sender identification in all messages.</li>
+      <li>Include references to the <a href="/privacy.html">Privacy Policy</a> where applicable.</li>
+      <li>Operate systems in a manner that does not disrupt shared network resources or external services.</li>
+    </ul>
+    <p>Violation may result in immediate suspension and notification to relevant service providers or authorities.</p>
+
+    <h2>3. Transactional Email Policy</h2>
+    <p>aleksaitcyber employs verified transactional email providers (currently <strong>Mailgun</strong> and <strong>Amazon SES</strong>).</p>
+    <ul class="list">
+      <li>All outgoing messages are authenticated via <strong>SPF</strong>, <strong>DKIM</strong>, and <strong>DMARC</strong>.</li>
+      <li>Encryption is enforced via <strong>STARTTLS</strong>.</li>
+      <li>Messages are rate-limited and monitored for compliance.</li>
+      <li>All messages originate from the <code>mail.aleksaitcyber.com</code> domain.</li>
+    </ul>
+    <p>Permitted categories of email include:</p>
+    <ul class="list">
+      <li>System uptime and monitoring alerts</li>
+      <li>Backup and recovery reports</li>
+      <li>Security notifications (SSH logins, fail2ban events)</li>
+    </ul>
+    <p>Unsubscribe mechanisms are not required for purely transactional notifications. Recipients are limited to verified administrative contacts.</p>
+
+    <h2>4. Contact Source Policy</h2>
+    <p><strong>aleksaitcyber</strong> does not acquire, rent, scrape, or purchase any contact lists. All recipients are internally managed or belong to contracted clients who have explicitly authorized system notifications. Proof of authorization can be provided to compliance authorities upon request.</p>
+
+    <h2>5. Prohibited Activities</h2>
+    <p>Users may not use aleksaitcyber systems or networks to:</p>
+    <ul class="list">
+      <li>Engage in illegal, unethical, deceptive, obscene, or abusive behavior.</li>
+      <li>Falsify sender data or conceal identity.</li>
+      <li>Host or distribute harmful, fraudulent, or violent content.</li>
+      <li>Disrupt or degrade the performance of shared systems.</li>
+      <li>Facilitate spam, phishing, or malware distribution.</li>
+    </ul>
+    <p>Any activity inconsistent with these terms may lead to service termination and, if necessary, reporting to law enforcement.</p>
+
+    <h2>6. Data Handling and Confidentiality</h2>
+    <p>Operational data (e.g., server logs, alert metadata, contact addresses) is processed solely for maintaining reliability and security. No personal or client data is sold or shared with third parties. Data is retained only as necessary for operational or compliance purposes, after which it is securely deleted. See the <a href="/privacy.html">Privacy Policy</a> for details.</p>
+
+    <h2>7. Security and Resource Use</h2>
+    <p>aleksaitcyber maintains hardened infrastructure using UFW, fail2ban, TLS enforcement, and continuous monitoring. Connected client systems must maintain current security patches and antivirus protection. Compromised or abusive systems may be quarantined immediately to preserve service integrity.</p>
+
+    <h2>8. Third-Party Responsibility</h2>
+    <p>Clients are responsible for any actions performed by personnel or contractors using aleksaitcyber systems. Use of these services to assist others in unlawful activity constitutes a direct breach of these Terms.</p>
+
+    <h2>9. Legal Cooperation</h2>
+    <p>aleksaitcyber complies with lawful regulatory or law enforcement requests under Swiss and EU law. Where legally permissible, affected clients will be notified prior to disclosure.</p>
+
+    <h2>10. Service Limitation and Liability</h2>
+    <p>Services are provided on a <em>best-effort</em> basis. aleksaitcyber is not liable for interruptions or damages arising from upstream provider outages (e.g., Mailgun, AWS, Hetzner), client-side misconfiguration, or external events beyond operational control.</p>
+
+    <h2>11. Amendments</h2>
+    <p>These Terms may be updated periodically to reflect operational, legal, or provider changes. Updated versions will be published at this URL with a revised effective date.</p>
+
+    <h2>12. Governing Law</h2>
+    <p>These Terms are governed by Swiss law. Any disputes shall be submitted to the competent courts of Switzerland.</p>
+
+    <h2>Contact</h2>
+    <p>For compliance or abuse concerns, contact: <a href="mailto:contact@aleksaitcyber.com">contact@aleksaitcyber.com</a></p>
+  </main>
+
+ <footer class="wrap footer">
+  <div class="foot-left">© <span id="y"></span> aleksaitcyber — Structure • Reliability • Security</div>
+  <div class="foot-right">
+    <a href="/email-policy.html">Email Policy</a>
+    <span class="dot">•</span>
+    <a href="/privacy.html">Privacy</a>
+    <span class="dot">•</span>
+    <a href="/terms.html">Terms</a>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
+
+
+
+
